@@ -97,7 +97,69 @@
   #caret-double-down {
     width: 32px;
     height: 32px;
+    margin-bottom: 57px;
     background-image: url(/assets/icons/CaretDoubleDown.svg);
   }
 }
 
+#projects {
+  background-color: var(--gray-500);
+  padding: 72px 120px 144px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+
+  header {
+    
+    p {
+      font: var(--subtitle);
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font: var(--title-md);
+      color: var(--gray-100);
+    }
+
+    p, h2 {
+      text-align: center;
+    }
+  }
+
+  #project-cards {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+
+    .project-card {
+      background-color: var(--gray-400);
+      padding: 12px;
+      border-radius: 12px;
+
+      img {
+        max-width: 306px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      figcaption {
+        padding: 4px;
+
+        h3 {
+          font: var(--title-sm);
+          color: var(--gray-100);
+          margin-bottom: 8px;
+        }
+
+        p {
+          font: var(--text-sm);
+          color: var(--gray-200);
+        }
+      }
+    }
+  }
+}
