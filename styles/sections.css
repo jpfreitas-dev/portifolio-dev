@@ -1,0 +1,109 @@
+#introduction {
+  background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  gap: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    max-width: 1040px;
+
+    header {
+      margin-inline: 180px;
+      margin-bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #avatar {
+        width: 112px;
+        height: 112px;
+        
+        margin-bottom: 56px;
+        position: relative;
+        padding: 8px;
+        
+        img:nth-child(1) {
+          border-radius: 50%;
+          width: 87.87px;
+          border: 3px solid var(--red);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          bottom: 10px;
+          right: 8px;
+        }
+      }
+
+      #header-text {
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 20px;
+
+          p {
+            color: var(--gray-200);
+            font: var(--subtitle);
+
+            span {
+              color: var(--red);
+            }
+          }
+
+          h1 {
+            font: var(--title-lg);
+            color: var(--gray-100);
+          }
+        }
+
+        #description {
+          font: var(--text-sm);
+          color: var(--gray-300);
+          text-align: center;
+          max-width: 750px;
+        }
+
+      }
+    }
+
+    #tags {
+      display: flex;
+      gap: 16px;
+
+      .tag {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: var(--gray-400);
+        border-radius: 999px;
+
+        span {
+          font: var(--text-md);
+          color: var(--gray-200);
+        }
+      }
+    }
+  }
+
+  #caret-double-down {
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/icons/CaretDoubleDown.svg);
+    margin-bottom: 180px;
+  }
+}
+
