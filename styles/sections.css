@@ -98,7 +98,7 @@
     width: 32px;
     height: 32px;
     margin-bottom: 57px;
-    background-image: url(/assets/icons/CaretDoubleDown.svg);
+    background-image: url(../assets/icons/CaretDoubleDown.svg);
   }
 }
 
@@ -272,11 +272,11 @@
       a {
         width: 20px;
         height: 20px;
-        background-image: url(/assets/icons/ArrowUpRight.svg);
+        background-image: url(../assets/icons/ArrowUpRight.svg);
         background-size: cover;
 
         &:hover {
-          background-image: url(/assets/icons/ArrowUpRightHover.svg)
+          background-image: url(../assets/icons/ArrowUpRightHover.svg)
         }
       }
     }
