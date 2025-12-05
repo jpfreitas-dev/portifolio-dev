@@ -163,3 +163,122 @@
     }
   }
 }
+
+#services {
+  background-color: var(--gray-600);
+  padding: 88px 120px 120px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+
+  header {
+    p {
+      font: var(--subtitle);
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font: var(--title-md);
+      color: var(--gray-100);
+    }
+
+    p, h2 {
+      text-align: center;
+    }
+  }
+
+  #service-cards {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .service-card{
+      border: 2px solid var(--gray-500);
+      border-radius: 12px;
+      padding: 20px;
+      
+
+      h3 {
+          font: var(--title-sm);
+          color: var(--gray-100);
+          margin-block: 20px 8px;
+        }
+
+        p {
+          font: var(--text-sm);
+          color: var(--gray-200);
+        }
+    }
+  }
+}
+
+#contacts {
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 128px 200px 120px 120px;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+      font: var(--subtitle);
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font: var(--title-md);
+      color: var(--gray-100);
+    }
+
+    p {
+      font: var(--text-md);
+      color: var(--gray-200)
+    }
+
+    span, h2, p {
+      text-align: center;
+    }
+  }
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .social-button {
+      border-radius: 8px;
+      background-color: var(--gray-400);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 20px;
+
+      p {
+        width: 288px;
+        font: var(--text-md);
+        color: var(--gray-200);
+      }
+
+      a {
+        width: 20px;
+        height: 20px;
+        background-image: url(/assets/icons/ArrowUpRight.svg);
+        background-size: cover;
+
+        &:hover {
+          background-image: url(/assets/icons/ArrowUpRightHover.svg)
+        }
+      }
+    }
+  }
+}
